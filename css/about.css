@@ -1,0 +1,23 @@
+.about {
+    background: #f6f6f6;display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 18px;
+  }
+  .about-menu {
+    height: 261px;
+    margin-top: 30px;
+    min-width: 310px;
+    max-width: 485px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .about-name {
+    margin-top: 0;
+  }
+  .about-end {
+    margin-bottom: 0;
+  }

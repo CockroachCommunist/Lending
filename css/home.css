@@ -1,0 +1,170 @@
+/* **************************** */
+.header-menu {
+    display: none;
+  }
+  .header__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    height: 60px;
+    border-bottom: 1px solid #828282;
+  }
+  .header__link {
+    text-decoration: none;
+    color: #828282;
+    font-weight: 900;
+    font-size: 18px;
+  }
+  .header__link:hover {
+    color: #090909;
+    transition: 0.4s;
+  }
+  .home {
+    color: #090909;
+  }
+  .home:hover {
+    color: #828282;
+    transition: 0.3s;
+  }
+  
+  .header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+    margin-top: 65px;
+  }
+  .header-title {
+    font-size: 47px;
+    width: 125px;
+  }
+  
+  /* ******************************** */
+  .burger-menu {
+    display: block;
+    position: relative;
+    width: 33px;
+    height: 20px;
+    border-style: none;
+  
+    background: transparent;
+    cursor: pointer;
+    z-index: 10;
+  }
+  .burger-menu span {
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    left: 0;
+    border-radius: 4px;
+  
+    background-color: #000;
+  }
+  .burger-menu span:first-child {
+    top: 0;
+  }
+  .burger-menu span:nth-child(2) {
+    top: 40%;
+  }
+  .burger-menu span:last-child {
+    bottom: 0;
+  }
+  
+  /* ***************************** */
+  
+  .nav-burger {
+    display: none;
+    left: 0;
+    z-index: 5;
+    width: 100vw;
+    height: 100vh;
+    background: #fff;
+  }
+  #nav.open {
+    display: block;
+    overflow: hidden;
+    position: absolute;
+    padding: 0 30px;
+    display: flex;
+    flex-direction: column;
+  }
+  .nav__list {
+    margin: 0;
+  }
+  .nav__item {
+    margin-bottom: 65px;
+  }
+  .nav__item:last-child {
+    margin-bottom: 0;
+  }
+  
+  .nav__link {
+    text-decoration: none;
+    color: #828282;
+    font-weight: 900;
+  }
+  .nav__link.home {
+    color: #090909;
+  }
+  
+  .nav-translate {
+    transform: rotate(90deg);
+    margin-top: 180px;
+  }
+  .nav-button {
+    border: none;
+    background: transparent;
+    margin: 0;
+    color: #828282;
+  }
+  .nav-button:first-child {
+    border-right: 3px solid #090909;
+  }
+  .nav-button:last-child {
+    padding-left: 0;
+    color: #090909;
+  }
+  
+  /* ******************************* */
+  
+  .main-work {
+    margin-top: 25px;
+  }
+  .main-prof {
+    margin: 0;
+  }
+  .main-info {
+    margin: 0;
+  }
+  
+  .main-image {
+    width: 100%;
+    margin-top: 40px;
+  }
+  .main-imageFull {
+    display: none;
+  }
+
+  /* ********************* */
+
+  @media (min-width: 900px) {
+    .header-menu {
+      display: block;
+    }
+    .burger-menu {
+      display: none;
+    }
+    .header {
+      margin-top: 40px;
+    }
+    .main-image {
+      display: none;
+    }
+    .main-imageFull {
+      display: block;
+      width: 100%;
+      margin-top: 50px;
+    }
+  }

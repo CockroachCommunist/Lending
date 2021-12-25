@@ -1,0 +1,59 @@
+html {
+  scroll-behavior: smooth;
+}
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Gilroy", sans-serif;
+}
+.is-open {
+  max-height: 100vh;
+  overflow: hidden;
+}
+
+li {
+  list-style-type: none;
+}
+ul,
+ol {
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.section {
+  margin: 0;
+  padding: 80px 30px;
+}
+.section:first-child {
+  padding-top: 0;
+}
+
+.title {
+  margin: 0;
+  font-size: 34px;
+  font-weight: 700;
+}
+.text {
+  margin: 0;
+  font-size: 18px;
+}
+
+/* *************************** */
+
+@media (min-width: 768px) {
+  body {
+    padding: 0;
+  }
+  .section {
+    padding: 90px 60px;
+  }
+}
+
+@media (min-width: 1500px) {
+  .section {
+    padding: 110px 250px;
+  }
+  .text {
+    font-size: 22px;
+  }
+}
